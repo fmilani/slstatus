@@ -66,9 +66,11 @@ static const char unknown_str[] = "";
  */
 static const struct arg args[] = {
 	/* function    format               argument */
-	{ run_command, "%s",             "slblock $(packages-to-update)"},
-	{ run_command, "%s",             "slblock $(battery-capacity)"},
-	{ run_command, "%s",             "slblock $(ram-used)"},
-	{ run_command, "%s",             "slblock $(network-checker)" },
-	{ datetime,    "^b#222222^ %s ", "%a %b %d %R" },
+	{ run_command, "%s",             "slblock \"$(jbl-headset-battery-checker)\""},
+	{ run_command, "%s",             "slblock \"$(evo-vpn-status)\""},
+	{ run_command, "%s",             "slblock \"$(packages-to-update)\""},
+	{ run_command, "%s",             "slblock \"$(battery-capacity)\""},
+	{ run_command, "%s",             "slblock \"$(ram-used)\""},
+	{ run_command, "%s",             "slblock \"$(network-checker)\"" },
+	{ datetime,    "^Rb#222222^ 󰃭 %s ^R^", "%a %b %d %R" },
 };
