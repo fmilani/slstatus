@@ -70,6 +70,7 @@ static const struct arg args[] = {
 	{ run_command, "%s",             "slblock \"$(devices-battery-level)\""},
 	{ run_command, "%s",             "slblock \"$(evo-vpn-status)\""},
 	{ run_command, "%s",             "slblock \"$(packages-to-update)\""},
+	{ run_command, "%s",             "slblock \"$(cpu-temperature)\""},
 	{ run_command, "%s",             "slblock \"$(battery-capacity)\""},
 	{ run_command, "%s",             "slblock \"$(ram-used)\""},
 	{ run_command, "%s",             "slblock \"$(network-checker)\"" },
